@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Roberto Chacon</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/me.jpg" alt="">
+            </div>
+            <h1>Roberto Chacon Alcantara</h1><br><hr><br>
+            <h2>Tecnologo en desarrollo de software - Experto desarrollo de aplicaicones web</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Roberto Chacon Alcantara.</span> Poseo experiencia en PHP desde 2017, he trabajado como Desarrollador Back-end, implementando y desarrollando API's RESTful y Microservicios en producción. Mis habilidades abarcan diversas áreas del back-end y mantengo un buen conocimiento de las nuevas tecnologías. Además, tengo experiencia en gestión de bases de datos y en la administración de sistemas operativos como Linux y Unix, incluyendo Ubuntu y Debian. Soy apasionado por aprender y me esfuerzo por adquirir nuevos conocimientos cada día..</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            09-06-1998
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            829-782-1156
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            rchaconalcantara@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://racvycode.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Villa Altagracia, San Cristobal
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+
+                <!-- Back-End -->
+                <div class="col">
+                    <h3>Back-End</h3>
+                    <div class="skill">
+                        <span>PHP(LARAVEL)</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>NODEJS(Express) Y TYPESCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PYTHON(DJANGO)</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#(.NET CORE)</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Front-End -->
+                <div class="col">
+                    <h3>Front-End</h3>
+                    <div class="skill">
+                        <span>HTML5, CSS3 & JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ANGULAR</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SVELTE</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>REACT</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DataBase -->
+                <div class="col">
+                    <h3>Bases de datos</h3>
+                    <div class="skill">
+                        <span>MYSQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL SERVER</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQLLITE</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MONGODB</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FIREBASE</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DataBase -->
+                <div class="col">
+                    <h3>Otras skills</h3>
+                    <div class="skill">
+                        <span>APLICACIONES REAL TIME</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DOCKER, DDEV, NGINX y VPS</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SCRUM, JIRA, TRELLO Y ASANA</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GITHUB, GITLAB, BITBUCKET, AZURE DEVOPS</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CI/CD</span>
+                        <div class="barra-skill">
+                            <div class="progreso"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachillerato Técnico</h4>
+                        <span class="casa">Politecnico Nuestra Señora de la Altagracia</span>
+                        <span class="fecha">2013 - 2016</span>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p> -->
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnologo en Desarrollo de Software</h4>
+                        <span class="casa">Instituto Tecnológico de las Américas (ITLA)</span>
+                        <span class="fecha">2017 - 2019</span>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p> -->
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería en Tecnologías de la Información y la Comunicación</h4>
+                        <span class="casa">Universidad Iberoamericana (UNIBE)</span>
+                        <span class="fecha">2020 - actual</span>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p> -->
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Backend PHP</h4>
+                        <span class="casa">SImLIMITES</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Participe en el desarrollo de una plataforma web para el sector de las telecomunicaciones, viajes y tecnología desarrollando apis, modulos e interfacez dinamicas  utilizando servicios externos utilizados por algunos procesos de la plataforma.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Back-end developer</h4>
+                        <span class="casa">Concentra</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Participe en el desarrollo de un sistema web administrativo como Outsourcing en la empresa Claro utilizando la tecnologia, Aduanas, Edeeste y Prodominicana.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Web developer</h4>
+                        <span class="casa">OGTIC</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>Participe en el desarrollo del portal web <b>Servicio en linea</b> creando nuevas funcionalidades y resoluciones a problemas del mismo para la mejora y optimizar procesos que a su ves van de la mano con el CRM(Backend) o SPL-Backend en el cual desarrolle modulos que gestionan los servicios internos y externos relacionados a otros sistemas o instituciones. Entre otros proyectos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
